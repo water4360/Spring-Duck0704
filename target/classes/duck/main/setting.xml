@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- 	여기는 주입받을 속성객체 -->
+    <bean id="flyWithWings" class="duck.fly.behavior.FlyWithWings"/>
+    <bean id="flyNoWay" class="duck.fly.behavior.FlyNoWay"/>
+    <bean id="quack" class="duck.quack.behavior.Quack"/>
+    <bean id="squeak" class="duck.quack.behavior.Squeak"/>
+    <bean id="muteQuack" class="duck.quack.behavior.MuteQuack"/>
+
+<!-- 	여기는 메인으로 지정해줄 메인객체와 객체의 속성 변수들. -->
+	<bean id="rubberDuck" class="duck.kind.RubberDuck">
+		<property name="flyBehavior" ref="flyNoWay"/>
+		<property name="quackBehavior" ref="squeak"/>
+	</bean>
+	<bean id="decoyDuck" class="duck.kind.DecoyDuck">
+		<property name="flyBehavior" ref="flyWithWings"/>
+		<property name="quackBehavior" ref="muteQuack"/>
+	</bean>
+	<bean id="mallardDuck" class="duck.kind.MallardDuck">
+		<property name="flyBehavior" ref="flyWithWings"/>
+		<property name="quackBehavior" ref="quack"/>
+	</bean>
+
+
+	<bean id="displayDuck" class="duck.main.DisplayDuck">
+<!-- 		<constructor-arg ref="rubberDuck"/> -->
+		<constructor-arg ref="mallardDuck"/>
+<!-- 		<constructor-arg ref="decoyDuck"/> -->
+	</bean>
+
+
+</beans>
+
+
+
+
