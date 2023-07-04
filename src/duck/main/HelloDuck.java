@@ -16,7 +16,7 @@ public class HelloDuck {
 		displayDuck.helloDuck();
 		
 		
-		//¾Æ·¡´Â Å×½ºÆ®¿ë
+		//ì•„ëž˜ëŠ” í…ŒìŠ¤íŠ¸ìš©
 		//duck = new RubberDuck();
 		//duck = new DecoyDuck();
 		

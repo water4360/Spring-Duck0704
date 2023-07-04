@@ -8,7 +8,7 @@ public class MallardDuck extends Duck {
 
 	@Override
 	public void displayName() {
-		System.out.println("³ª´Â ¸»¶óµå ´ö, Ã»µÕ¿À¸®ÁÒ.");
+		System.out.println("ë‚˜ëŠ” ë§ë¼ë“œ ë•, ì²­ë‘¥ì˜¤ë¦¬ì£ .");
 	}
 
 	

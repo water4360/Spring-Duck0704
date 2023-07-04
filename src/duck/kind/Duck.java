@@ -5,7 +5,7 @@ import duck.quack.behavior.QuackBehavior;
 
 public abstract class Duck {
 	
-	//¾ê³×´Â interface
+	//ï¿½ï¿½×´ï¿½ interface
 	protected FlyBehavior flyBehavior;
 	protected QuackBehavior quackBehavior;
 	
@@ -14,7 +14,7 @@ public abstract class Duck {
 	}
 	
 	public void swim() {
-		System.out.println("¿À¸®´Â ¼ö¿µÇÏÁö~");
+		System.out.println("ì˜¤ë¦¬ëŠ” ìˆ˜ì˜ì„ í•´~");
 	}
 	public void performFly() {
 		flyBehavior.fly();

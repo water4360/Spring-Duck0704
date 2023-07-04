@@ -7,7 +7,7 @@ public class DecoyDuck extends Duck {
 
 	@Override
 	public void displayName() {
-		System.out.println("³ª´Â µğÄÚÀÌ´ö, ´õ¹Ì¿À¸®ÁÒ.");
+		System.out.println("ë‚˜ëŠ” ë””ì½”ì´ ì˜¤ë¦¬, ê°€ì§œì˜¤ë¦¬ì£ .");
 	}
 
 	

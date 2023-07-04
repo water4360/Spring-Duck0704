@@ -7,7 +7,7 @@ public class RubberDuck extends Duck {
 
 	@Override
 	public void displayName() {
-		System.out.println("³ª´Â ·¯¹ö´ö, °í¹«¿À¸®ÁÒ.");
+		System.out.println("ë‚˜ëŠ” ëŸ¬ë²„ë•, ê³ ë¬´ì˜¤ë¦¬ì£ .");
 	}
 
 	

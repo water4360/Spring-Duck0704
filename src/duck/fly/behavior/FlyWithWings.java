@@ -4,7 +4,7 @@ public class FlyWithWings implements FlyBehavior {
 
 	@Override
 	public void fly() {
-		System.out.println("³ª´Â ³¯ ¼ö ÀÖ¾î!");
+		System.out.println("ë‚˜ëŠ” ë‚  ìˆ˜ ìžˆì–´!");
 	}
 
 }
